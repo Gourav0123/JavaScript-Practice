@@ -1,1 +1,3 @@
-console.log([45,45,12,36] + [54,59,35,87]);
+console.log([null] + {});
+console.log({});
+console.log([]);
