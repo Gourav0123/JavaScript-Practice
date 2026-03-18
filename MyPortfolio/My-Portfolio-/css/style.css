@@ -1,0 +1,93 @@
+/* Navbar Base */
+.custom-navbar {
+  background: #000000e0;
+  transition: 0.8s ease;
+}
+.navbar-brand.fw-bold {
+  font-size: 30px;
+}
+/* On Scroll */
+.nav-scrolled {
+  background: #00000080;
+  backdrop-filter: blur(10px);
+}
+
+/* Hover underline */
+.nav-hover {
+  position: relative;
+}
+
+.nav-hover::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffef0c;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.nav-hover:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Animated hamburger */
+.toggler-icon {
+  width: 25px;
+  height: 2px;
+  background: white;
+  display: block;
+  position: relative;
+}
+
+.toggler-icon::before,
+.toggler-icon::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.toggler-icon::before {
+  top: -8px;
+}
+
+.toggler-icon::after {
+  top: 8px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #000000 !important;
+  color: white;
+}
+
+
+.container.home-section {
+  padding-top: 100px;
+}
+
+/*-----------------------------Home Section-----------------------------------*/
+
+.changing-text {
+  display: inline-block;
+  height: 24px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.changing-text span {
+  display: block;
+  animation: slideText 6s infinite;
+}
+
+@keyframes slideText {
+  0% { transform: translateY(0); }
+  33% { transform: translateY(-24px); }
+  66% { transform: translateY(-48px); }
+  100% { transform: translateY(0); }
+}
