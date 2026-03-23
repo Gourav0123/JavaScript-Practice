@@ -4,182 +4,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Gourav</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Gourav | Modern Web Designer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarCollapse" data-bs-smooth-scroll="true" class="bg-dark text-white">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glassmorphism-nav transition-all" id="mainNav">
         <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand fw-bold" href="#">Gourav</a>
-
-            <!-- Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                Gourav<span class="text-gradient-primary">.</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <i class="bi bi-list fs-1"></i>
             </button>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center gap-3">
-
-                    <li class="nav-item">
-                        <a class="nav-link active nav-hover" href="#home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link nav-hover" href="#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link nav-hover" href="#services">Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link nav-hover" href="#contact">Contact</a>
-                    </li>
-
-                    <!-- CTA Button -->
-                    <li class="nav-item">
-                        <a class="btn btn-primary px-4 rounded-pill" href="#contact">Contact Me</a>
-                    </li>
-
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto py-3 py-lg-0 fw-medium">
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#portfolio">Work</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#contact">Contact</a></li>
                 </ul>
             </div>
-
         </div>
     </nav>
 
-    <section class=" home-section" id="home">
-        <div class="container">
-            <div class="row align-items-center text-center text-lg-start">
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center position-relative min-vh-100 overflow-hidden">
+        <!-- Abstract gradient background blobs -->
+        <div class="shape-blob blob-1"></div>
+        <div class="shape-blob blob-2"></div>
 
-                <!-- Left Content -->
-                <div class="col-lg-6">
-                    <h1 class="fw-bold">
-                        Hi, I'm <span class="text-primary fw-bold">Gourav</span>
+        <div class="container position-relative z-index-1 mt-5 mt-lg-0">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content text-center text-lg-start">
+                    <div class="badge rounded-pill bg-white text-dark mb-3 px-3 py-2 fw-semibold shadow-sm animate-fade-in-up"
+                        style="animation-delay: 0.1s;">
+                        👋 Welcome to my portfolio
+                    </div>
+                    <h1 class="display-2 fw-bolder mb-3 animate-fade-in-up" style="animation-delay: 0.2s;">
+                        Hi, I'm <br>
+                        <span class="text-gradient-primary">Gourav</span>
                     </h1>
-
-                    <h5 class="text-muted">
-                        Creative <span class="changing-text">
-                            <span>Web Designer</span>
-                            <span>Developer</span>
-                            <span>YouTube Creator</span>
-                        </span>
-                    </h5>
-
-                    <p class="mt-3">
-                        I create modern, responsive websites with clean UI & smooth user experience.
+                    <h2 class="h3 fw-light text-light-50 mb-4 animate-fade-in-up" style="animation-delay: 0.3s;">
+                        Creative <span class="fw-semibold text-white">Web Designer</span> based in India.
+                    </h2>
+                    <p class="lead mb-5 text-secondary animate-fade-in-up pe-lg-5" style="animation-delay: 0.4s;">
+                        I craft intuitive interfaces, stunning visual experiences, and responsive layouts that bridge
+                        the gap between aesthetics and functionality.
                     </p>
-                </div>
-
-                <!-- Right Image -->
-                <div class="col-lg-6 text-center">
-                    <div class="Person-Image">
-                        <img src="assets/images/young-men.avif" class="img-fluid rounded-4" alt="person">
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 animate-fade-in-up"
+                        style="animation-delay: 0.5s;">
+                        <a href="#portfolio" class="btn btn-gradient btn-lg rounded-pill px-5 shadow-lg">View
+                            Projects</a>
+                        <a href="#contact" class="btn btn-glass btn-lg rounded-pill px-5">Let's Talk</a>
                     </div>
                 </div>
-
+                <div class="col-lg-6 mt-5 mt-lg-0 position-relative animate-fade-in-in" style="animation-delay: 0.6s;">
+                    <div class="hero-image-container mx-auto">
+                        <div class="image-backdrop rotating-border"></div>
+                        <!-- Using Unsplash for a modern designer vibe -->
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Gourav - Web Designer" class="img-fluid rounded-4 shadow-image object-fit-cover">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="about" class="py-5">
+
+    <!-- Stats Banner -->
+    <div class="py-5 bg-darker border-top border-bottom border-dark">
         <div class="container">
-
-            <!-- Heading -->
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">About Me</h2>
-                <p class="text-muted">Know more about my skills & experience</p>
-            </div>
-
-            <div class="row align-items-center g-5">
-
-                <!-- Image -->
-                <div class="col-lg-5 text-center">
-                    <img src="assets/images/young-men.avif" class="img-fluid rounded-4 shadow-lg" alt="about">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold text-gradient-primary mb-0">7+</h2>
+                    <p class="text-secondary fw-medium mt-2 mb-0">Months Experience</p>
                 </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold text-gradient-primary mb-0">5+</h2>
+                    <p class="text-secondary fw-medium mt-2 mb-0">Projects Done</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold text-gradient-primary mb-0">3+</h2>
+                    <p class="text-secondary fw-medium mt-2 mb-0">Happy Clients</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="display-5 fw-bold text-gradient-primary mb-0">2</h2>
+                    <p class="text-secondary fw-medium mt-2 mb-0">Design Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <!-- Content -->
-                <div class="col-lg-7">
-
-                    <h4 class="fw-semibold mb-3">
-                        Creative Web Designer & Developer
-                    </h4>
-
-                    <p class="text-muted">
-                        I build modern, responsive, and user-focused websites with clean UI
-                        and smooth performance. My goal is to create digital experiences that
-                        are both visually appealing and highly functional.
+    <!-- About Section -->
+    <section id="about" class="section-padding py-6 position-relative z-index-1">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="position-relative p-2">
+                        <div class="bg-gradient-box position-absolute top-0 start-0 w-100 h-100 rounded-4 z-index-n1">
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="About Gourav" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover"
+                            style="height: 500px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <h6 class="text-gradient-primary fw-bold text-uppercase tracking-wider mb-2">About Me</h6>
+                    <h2 class="display-6 fw-bold mb-4">Designing digital experiences that inspire.</h2>
+                    <p class="text-secondary lead mb-4">
+                        I am a passionate Web Designer with a keen eye for aesthetics and a drive to create
+                        pixel-perfect digital solutions. I believe that good design is not just about making things look
+                        pretty, but about solving problems and providing seamless user experiences.
                     </p>
-
-                    <!-- Info List -->
-                    <div class="row mt-4 g-3">
-
-                        <div class="col-md-6">
-                            <div class="p-3 border rounded-4 shadow-sm h-100 info-card">
-                                <p class="mb-1 text-muted small">Name</p>
-                                <h6 class="fw-semibold mb-0">Gourav</h6>
-                            </div>
+                    <p class="text-secondary mb-5">
+                        My expertise spans across modern UI/UX design, front-end development using HTML/CSS, Bootstrap,
+                        and bringing static designs to life with smooth interactions. I constantly explore new design
+                        trends to deliver fresh, modern, and engaging websites.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3 d-flex align-items-center">
+                                    <span class="icon-box-sm bg-primary-subtle text-primary rounded-circle me-3"><i
+                                            class="bi bi-check-lg"></i></span>
+                                    <span class="fw-medium">UI/UX Design</span>
+                                </li>
+                                <li class="mb-3 d-flex align-items-center">
+                                    <span class="icon-box-sm bg-primary-subtle text-primary rounded-circle me-3"><i
+                                            class="bi bi-check-lg"></i></span>
+                                    <span class="fw-medium">Responsive Web Design</span>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="p-3 border rounded-4 shadow-sm h-100 info-card">
-                                <p class="mb-1 text-muted small">Role</p>
-                                <h6 class="fw-semibold mb-0">Web Designer</h6>
-                            </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3 d-flex align-items-center">
+                                    <span class="icon-box-sm bg-primary-subtle text-primary rounded-circle me-3"><i
+                                            class="bi bi-check-lg"></i></span>
+                                    <span class="fw-medium">Interactive Prototyping</span>
+                                </li>
+                                <li class="mb-3 d-flex align-items-center">
+                                    <span class="icon-box-sm bg-primary-subtle text-primary rounded-circle me-3"><i
+                                            class="bi bi-check-lg"></i></span>
+                                    <span class="fw-medium">Frontend Development</span>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="col-md-6">
-                            <div class="p-3 border rounded-4 shadow-sm h-100 info-card">
-                                <p class="mb-1 text-muted small">Experience</p>
-                                <h6 class="fw-semibold mb-0">6+ Months</h6>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="p-3 border rounded-4 shadow-sm h-100 info-card">
-                                <p class="mb-1 text-muted small">Focus</p>
-                                <h6 class="fw-semibold mb-0">Frontend</h6>
-                            </div>
-                        </div>
-
                     </div>
-
-                    <!-- Skills -->
-                    <div class="mt-4 d-flex flex-wrap gap-2">
-
-                        <span class="skill-chip">HTML</span>
-                        <span class="skill-chip">CSS</span>
-                        <span class="skill-chip">Bootstrap</span>
-                        <span class="skill-chip">JavaScript</span>
-                        <span class="skill-chip">React</span>
-
-                    </div>
-
-                    <!-- Buttons -->
-                    <div class="mt-4 d-flex gap-3">
-                        <a href="#contact" class="btn btn-primary px-4">Hire Me</a>
-                        <a href="#" class="btn btn-outline-dark px-4">Download CV</a>
-                    </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>
 
-    <div id="services" style="height:100vh; padding:20px;">Services Section</div>
-    <div id="contact" style="height:100vh; padding:20px;">Contact Section</div>
+    <!-- Services Section -->
+    <section id="services" class="section-padding py-6 bg-darker">
+        <div class="container py-5">
+            <div class="text-center mb-5 max-w-700 mx-auto">
+                <h6 class="text-gradient-primary fw-bold text-uppercase tracking-wider mb-2">My Services</h6>
+                <h2 class="display-6 fw-bold mb-3">What I bring to the table</h2>
+                <p class="text-secondary">Comprehensive design solutions tailored to elevate your brand's digital
+                    presence.</p>
+            </div>
+            <div class="row g-4 pt-4">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 bg-dark text-white border-0 shadow-sm glass-panel p-4">
+                        <div class="card-body">
+                            <div class="service-icon mb-4">
+                                <i class="bi bi-vector-pen display-4 text-gradient-primary"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">UI/UX Design</h4>
+                            <p class="card-text text-secondary">Crafting intuitive and beautiful user interfaces with
+                                thoughtful user experiences that keep your audience engaged and delighted.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 bg-dark text-white border-0 shadow-sm glass-panel p-4">
+                        <div class="card-body">
+                            <div class="service-icon mb-4">
+                                <i class="bi bi-laptop display-4 text-gradient-primary"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Web Design</h4>
+                            <p class="card-text text-secondary">Designing responsive, state-of-the-art websites using
+                                tools like Figma, tailored perfectly to represent your brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 bg-dark text-white border-0 shadow-sm glass-panel p-4">
+                        <div class="card-body">
+                            <div class="service-icon mb-4">
+                                <i class="bi bi-code-slash display-4 text-gradient-primary"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Frontend Dev</h4>
+                            <p class="card-text text-secondary">Translating designs into clean, responsive, and semantic
+                                HTML, CSS, and Bootstrap code that works seamlessly across all devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Bootstrap JS -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding py-6">
+        <div class="container py-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                <div class="max-w-700 mb-4 mb-md-0">
+                    <h6 class="text-gradient-primary fw-bold text-uppercase tracking-wider mb-2">My Portfolio</h6>
+                    <h2 class="display-6 fw-bold mb-0">Recent Selected Works</h2>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4">View All Projects</a>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Project 1" class="img-fluid w-100 portfolio-img object-fit-cover">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <span class="badge bg-primary text-white mb-2 align-self-start">Web Design</span>
+                            <h4 class="text-white fw-bold mb-1">E-Commerce Redesign</h4>
+                            <p class="text-white-50 mb-0">Modernizing a lifestyle brand's storefront.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Project 2" class="img-fluid w-100 portfolio-img object-fit-cover">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <span class="badge bg-primary text-white mb-2 align-self-start">UI/UX</span>
+                            <h4 class="text-white fw-bold mb-1">Fintech Dashboard</h4>
+                            <p class="text-white-50 mb-0">Intuitive analytics and management interface.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative group mb-md-0">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Project 3" class="img-fluid w-100 portfolio-img object-fit-cover">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <span class="badge bg-primary text-white mb-2 align-self-start">Corporate</span>
+                            <h4 class="text-white fw-bold mb-1">Tech Startup Landing</h4>
+                            <p class="text-white-50 mb-0">High-conversion landing page with dark mode.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-6">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Project 4" class="img-fluid w-100 portfolio-img object-fit-cover">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <span class="badge bg-primary text-white mb-2 align-self-start">Frontend</span>
+                            <h4 class="text-white fw-bold mb-1">Creative Agency Site</h4>
+                            <p class="text-white-50 mb-0">Interactive portfolio for a digital agency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-5 position-relative overflow-hidden">
+        <div class="bg-gradient-primary opacity-25 position-absolute top-0 start-0 w-100 h-100 z-index-n1"></div>
+        <div class="container py-5 text-center position-relative z-index-1">
+            <h2 class="display-5 fw-bold mb-4">Have an awesome project in mind?</h2>
+            <p class="lead text-white-50 mb-5 max-w-700 mx-auto">Let's work together to bring your vision to life. I'm
+                currently available for freelance projects and full-time opportunities.</p>
+            <a href="#contact"
+                class="btn btn-light btn-lg text-dark rounded-pill px-5 fw-bold text-uppercase tracking-wider">Let's
+                Start a Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding py-6 bg-darker">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 pe-lg-5">
+                    <h6 class="text-gradient-primary fw-bold text-uppercase tracking-wider mb-2">Contact Me</h6>
+                    <h2 class="display-6 fw-bold mb-4">Let's stay connected</h2>
+                    <p class="text-secondary mb-5 pb-3 border-bottom border-dark border-opacity-50">
+                        Feel free to reach out to me for inquiries, collaborations, or just to say hello. Fill out the
+                        form, and I'll get back to you as soon as possible.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div
+                            class="icon-box-md bg-dark rounded-circle d-flex align-items-center justify-content-center border border-secondary border-opacity-25 me-4">
+                            <i class="bi bi-envelope-at text-gradient-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Email</h5>
+                            <a href="mailto:hello@gourav.design"
+                                class="text-secondary text-decoration-none hover-primary transition-all">hello@gourav.design</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div
+                            class="icon-box-md bg-dark rounded-circle d-flex align-items-center justify-content-center border border-secondary border-opacity-25 me-4">
+                            <i class="bi bi-telephone text-gradient-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Phone</h5>
+                            <a href="tel:+919876543210"
+                                class="text-secondary text-decoration-none hover-primary transition-all">+91 98765
+                                43210</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div
+                            class="icon-box-md bg-dark rounded-circle d-flex align-items-center justify-content-center border border-secondary border-opacity-25 me-4">
+                            <i class="bi bi-geo-alt text-gradient-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Location</h5>
+                            <span class="text-secondary">New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper glass-panel p-4 p-md-5 rounded-4 shadow-lg">
+                        <h4 class="fw-bold mb-4 border-left-primary ps-3">Send a Message</h4>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating text-dark">
+                                        <input type="text"
+                                            class="form-control bg-dark border-secondary border-opacity-25 text-white shadow-none focus-primary"
+                                            id="name" placeholder="Your Name" required>
+                                        <label for="name" class="text-secondary">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating text-dark">
+                                        <input type="email"
+                                            class="form-control bg-dark border-secondary border-opacity-25 text-white shadow-none focus-primary"
+                                            id="email" placeholder="Your Email" required>
+                                        <label for="email" class="text-secondary">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating text-dark">
+                                        <input type="text"
+                                            class="form-control bg-dark border-secondary border-opacity-25 text-white shadow-none focus-primary"
+                                            id="subject" placeholder="Subject">
+                                        <label for="subject" class="text-secondary">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating text-dark">
+                                        <textarea
+                                            class="form-control bg-dark border-secondary border-opacity-25 text-white shadow-none focus-primary h-px-150"
+                                            id="message" placeholder="Message" required
+                                            style="height: 150px"></textarea>
+                                        <label for="message" class="text-secondary">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit"
+                                        class="btn btn-gradient btn-lg rounded-pill px-5 w-100 shadow-lg">Send Message
+                                        <i class="bi bi-send ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-center border-top border-dark border-opacity-50">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p class="mb-3 mb-md-0 text-secondary">&copy; 2026 Gourav. All rights reserved.</p>
+            <div class="social-links d-flex gap-3">
+                <a href="#"
+                    class="social-icon bg-darker rounded-circle text-white d-flex align-items-center justify-content-center transition-all hover-primary">
+                    <i class="bi bi-dribbble"></i>
+                </a>
+                <a href="#"
+                    class="social-icon bg-darker rounded-circle text-white d-flex align-items-center justify-content-center transition-all hover-primary">
+                    <i class="bi bi-behance"></i>
+                </a>
+                <a href="#"
+                    class="social-icon bg-darker rounded-circle text-white d-flex align-items-center justify-content-center transition-all hover-primary">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="#"
+                    class="social-icon bg-darker rounded-circle text-white d-flex align-items-center justify-content-center transition-all hover-primary">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Main JS file -->
     <script src="js/script.js"></script>
+
+    <!-- Custom Script for Navbar and Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Navbar scroll effect
+            const mainNav = document.getElementById('mainNav');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    mainNav.classList.add('scrolled', 'shadow-sm');
+                    mainNav.classList.remove('py-lg-3');
+                } else {
+                    mainNav.classList.remove('scrolled', 'shadow-sm');
+                    mainNav.classList.add('py-lg-3');
+                }
+            });
+
+            // Trigger scroll on load in case page is not at top
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
 </body>
 
 </html>
