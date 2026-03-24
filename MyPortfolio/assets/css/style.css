@@ -3,14 +3,16 @@
   --primary: #6366f1;
   --primary-dark: #4f46e5;
   --secondary: #ec4899;
-  --dark-bg: #060f25;
+  --dark-bg: #0b1120;  /*#060f25*/
   --darker-bg: #0b1120;
   --text-light: #f8fafc;
   --text-muted: #94a3b8;
   --glass-bg: rgba(30, 41, 59, 0.7);
   --glass-border: rgba(255, 255, 255, 0.05);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--dark-bg);

@@ -45,6 +45,45 @@
  * Portfolio Interactive Scripts
  */
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbarCollapse");
+  const toggler = document.querySelector(".navbar-toggler");
+  const overlay = document.querySelector(".menu-overlay");
+
+  // Toggle overlay when menu opens/closes
+  toggler.addEventListener("click", function () {
+    setTimeout(() => {
+      if (navbar.classList.contains("show")) {
+        overlay.classList.add("active");
+      } else {
+        overlay.classList.remove("active");
+      }
+    }, 200);
+  });
+
+  // Click outside → close menu
+  overlay.addEventListener("click", function () {
+    const bsCollapse = new bootstrap.Collapse(navbar, {
+      toggle: false,
+    });
+    bsCollapse.hide();
+    overlay.classList.remove("active");
+  });
+
+  // Click nav links → close menu
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", function () {
+      if (navbar.classList.contains("show")) {
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+          toggle: false,
+        });
+        bsCollapse.hide();
+        overlay.classList.remove("active");
+      }
+    });
+  });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Navigation Scroll Effect
   const mainNav = document.getElementById("mainNav");
@@ -73,14 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
         "Frontend Developer",
         "Creative Thinker",
       ],
-      typeSpeed: 60,
+      typeSpeed: 40,
       backSpeed: 40,
-      backDelay: 2000,
+      backDelay: 1000,
       loop: true,
       showCursor: false, // Custom cursor is handled via CSS or next element
     });
   }
-
   // 3. Scroll Reveal Animations (Intersection Observer)
   // Fade in elements when they become visible in viewport
   const fadeElements = document.querySelectorAll(
