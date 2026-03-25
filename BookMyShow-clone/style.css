@@ -1,0 +1,30 @@
+.search-box {
+  width: 100%;
+  width: 500px; /* control width */
+}
+
+.search-box input {
+  font-size: 14px;
+  padding: 8px;
+}
+
+.search-box .input-group {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.navbar a:hover {
+  color: #dc3545 !important;
+}
+
+
+
+
+/*-------------------------Media Query--------------------------*/
+
+@media (max-width: 992px) {
+  .search-box {
+    margin-top: 10px;
+  }
+}

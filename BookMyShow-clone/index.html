@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMyShow | Home </title>
+    <title>BookMyShow-clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Hi there
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- Left Side -->
+            <div class="d-flex align-items-center gap-3">
+
+                <!-- Logo -->
+                <a class="navbar-brand m-0" href="#">
+                    <img src="assets/images/BookMyShow-Logo.png" alt="logo" style="height:45px;">
+                </a>
+
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-start-0"
+                            placeholder="Search for Movies, Events, Plays, Sports and Activities">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="d-flex align-items-center gap-3">
+
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle border-0" data-bs-toggle="dropdown">
+                        Chandigarh
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Delhi</a></li>
+                        <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                        <li><a class="dropdown-item" href="#">Bangalore</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-danger btn-sm px-3">Sign in</button>
+
+                <span class="fs-4">☰</span>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Second Navbar -->
+    <div class="bg-light border-top">
+        <div class="container d-flex justify-content-between py-2 small">
+
+            <!-- Left Menu -->
+            <div class="d-flex gap-4">
+                <a href="#" class="text-dark text-decoration-none">Movies</a>
+                <a href="#" class="text-dark text-decoration-none">Stream</a>
+                <a href="#" class="text-dark text-decoration-none">Events</a>
+                <a href="#" class="text-dark text-decoration-none">Plays</a>
+                <a href="#" class="text-dark text-decoration-none">Sports</a>
+                <a href="#" class="text-dark text-decoration-none">Activities</a>
+            </div>
+
+            <!-- Right Menu -->
+            <div class="d-flex gap-4">
+                <a href="#" class="text-dark text-decoration-none">ListYourShow</a>
+                <a href="#" class="text-dark text-decoration-none">Corporates</a>
+                <a href="#" class="text-dark text-decoration-none">Offers</a>
+                <a href="#" class="text-dark text-decoration-none">Gift Cards</a>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
