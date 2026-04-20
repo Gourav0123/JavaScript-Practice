@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class=""></div>
-    
+    <div class="topbar d-flex gap-2">
 
+        <!-- Currency -->
+        <div class="dropdown">
+            <button class="dropdown-btn">
+                <img src="india.svg" width="25px"> <img src="rupees-sign.svg">
+                <span class="arrow"><img src="dropdown-arow.svg"></span>
+            </button>
 
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><img src="india.svg" width="25px"> ₹ INR</div>
+                <div class="dropdown-item"><img src="india.svg" width="25px"> $ USD</div>
+                <div class="dropdown-item"><img src="india.svg" width="25px"> £ GBP</div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">
+                <img src="language.svg">
+                <span class="arrow"><img src="dropdown-arow.svg"></span>
+            </button>
 
+            <div class="dropdown-menu">
+                <div class="dropdown-item">English</div>
+                <div class="dropdown-item">हिन्दी</div>
+                <div class="dropdown-item">Punjabi</div>
+            </div>
+            </button>
+        </div>
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
