@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typedTarget) {
         new Typed('.typed-text', {
             strings: [
-                'Web Designer', 
+                'Junior Web Designer', 
                 'UI/UX Expert', 
                 'Frontend Developer', 
                 'Creative Thinker'
