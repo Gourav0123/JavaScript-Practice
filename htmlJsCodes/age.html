@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age clerification</title>
-    <link rel="stylesheet" href="age.css">
 </head>
 
 <body>
@@ -21,12 +20,40 @@
                 one artical
             </article>
             <article>
-                second artical
+                <h2>second artical</h2>
+                <form action="/submit-form" method="POST">
+                    <!-- 1. Text Input with Label -->
+                    <div>
+                        <label for="username">Full Name:</label>
+                        <input type="text" id="username" name="username" placeholder="John Doe" required>
+                    </div>
+
+                    <!-- 2. Dropdown Menu -->
+                    <div>
+                        <label for="topic">Reason for Contact:</label>
+                        <select id="topic" name="topic">
+                            <option value="support">Technical Support</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="feedback">General Feedback</option>
+                        </select>
+                    </div>
+
+                    <!-- 3. Multi-line Text Area -->
+                    <div>
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="50"
+                            placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <!-- 4. Action Button -->
+                    <button type="submit">Send Message</button>
+                </form>
+
+
             </article>
         </section>
-        <
     </main>
-    
+
 </body>
 
 </html>
