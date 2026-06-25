@@ -14,3 +14,21 @@ function checkEligibility() {
     result.textContent = "You cannot drive!";
   }
 }
+
+const ageInput = document.getElementById("ageInput");
+const message = document.getElementById("message");
+ageInput.addEventListener("input", function () {
+  const age = Number(ageInput.value);
+
+  if (age < 18) {
+    ageInput.classList.add("invalid");
+    ageInput.classList.remove("valid");
+
+    message.textContent = "Not eligible for driving";
+  } else {
+    ageInput.classList.add("valid");
+    ageInput.classList.remove("invalid");
+
+    message.textContent = "Eligible for driving";
+  }
+});
