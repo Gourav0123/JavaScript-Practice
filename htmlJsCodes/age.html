@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age clerification</title>
+    <link rel="stylesheet" href="age.css">
 </head>
 
 <body>
@@ -26,6 +27,12 @@
                     <div>
                         <label for="username">Full Name:</label>
                         <input type="text" id="username" name="username" placeholder="John Doe" required>
+                    </div>
+
+                    <div>
+                        <label for="username">Age:</label>
+                        <input type="number" id="ageInput" placeholder="Enter your age">
+                        <p id="message"></p>
                     </div>
 
                     <!-- 2. Dropdown Menu -->
@@ -53,7 +60,7 @@
             </article>
         </section>
     </main>
-
+    <script src="age.js"></script>
 </body>
 
 </html>
