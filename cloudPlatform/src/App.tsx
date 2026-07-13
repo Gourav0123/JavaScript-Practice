@@ -1,33 +1,30 @@
+import { useState } from "react";
 import Navbar from "./components/navbar";
 
-// define expected props for Navbar to avoid using `any`
-type NavbarProps = {
-  sidebarOpen: boolean;
-  setSidebarOpen: (open: boolean) => void;
-  darkMode: boolean;
-  toggleTheme: () => void;
-};
-
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode((prev) => !prev);
+  };
+
   return (
-    <div className="min-h-screen bg-slate-100 dark:bg-slate-950">
-      {/* pass typed props to Navbar */}
+    <div className={darkMode ? "dark" : ""}>
       <Navbar
-        {...({
-          sidebarOpen: false,
-          setSidebarOpen: (_: boolean) => {},
-          darkMode: false,
-          toggleTheme: () => {},
-        } as NavbarProps)}
+        sidebarOpen={sidebarOpen}
+        setSidebarOpen={setSidebarOpen}
+        darkMode={darkMode}
+        toggleTheme={toggleTheme}
       />
 
-      <main className="p-6">
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-white">
-          Cloud Platform Dashboard
+      <main className="min-h-screen bg-slate-100 p-6 dark:bg-slate-900">
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-white">
+          Cloud Dashboard
         </h1>
 
-        <p className="mt-2 text-slate-500 dark:text-slate-400">
-          Welcome to your cloud platform.
+        <p className="mt-2 text-slate-600 dark:text-slate-400">
+          Sidebar is {sidebarOpen ? "Open" : "Closed"}
         </p>
       </main>
     </div>
