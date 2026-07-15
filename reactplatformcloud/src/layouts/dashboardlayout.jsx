@@ -8,7 +8,6 @@ function DashboardLayout({ children }) {
       <Sidebar />
 
       <div className="flex-grow-1">
-
         <Navbar />
 
         <main className="p-4">
@@ -16,7 +15,6 @@ function DashboardLayout({ children }) {
         </main>
 
       </div>
-
     </div>
   );
 }
