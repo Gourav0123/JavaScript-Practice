@@ -1,20 +1,26 @@
+import { Outlet } from "react-router-dom";
+
 import Sidebar from "../components/sidebar/Sidebar";
 import Navbar from "../components/navbar/Navbar";
 
-function DashboardLayout({ children }) {
+function DashboardLayout() {
   return (
     <div className="d-flex">
 
       <Sidebar />
 
       <div className="flex-grow-1">
+
         <Navbar />
 
         <main className="p-4">
-          {children}
+
+          <Outlet />
+
         </main>
 
       </div>
+
     </div>
   );
 }
