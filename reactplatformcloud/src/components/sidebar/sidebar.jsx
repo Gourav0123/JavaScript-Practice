@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 function Sidebar() {
   return (
     <aside
@@ -11,25 +12,21 @@ function Sidebar() {
 
       <ul className="nav flex-column">
 
-        <li className="nav-item mb-2">
-          <a href="#" className="nav-link text-white">
-            <i className="bi bi-speedometer2 me-2"></i>
-            Dashboard
-          </a>
-        </li>
+        <NavLink to="/" className="nav-link text-white">
+          <i className="bi bi-speedometer2 me-2"></i>
+          Dashboard
+        </NavLink>
+
+        {/* <NavLink to="/instances" className="nav-link text-white">
+          <i className="bi bi-pc-display me-2"></i>
+          Instances
+        </NavLink> */}
 
         <li className="nav-item mb-2">
-          <a href="#" className="nav-link text-white">
-            <i className="bi bi-hdd-network me-2"></i>
-            Instances
-          </a>
-        </li>
-
-        <li className="nav-item mb-2">
-          <a href="#" className="nav-link text-white">
+          <NavLink to="/storage" className="nav-link text-white">
             <i className="bi bi-device-hdd me-2"></i>
             Storage
-          </a>
+          </NavLink>
         </li>
 
       </ul>

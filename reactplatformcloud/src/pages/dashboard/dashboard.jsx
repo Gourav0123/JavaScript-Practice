@@ -1,123 +1,114 @@
-function Dashboard() {
-  return (
-    <div className="container-fluid">
+import { useState } from "react";
+// import "./src/pages/storage/S"
+// import "./Dashboard.css";
 
-      <div className="mb-4">
-        <h2>Welcome Back 👋</h2>
-        <p className="text-secondary">
-          Manage your cloud infrastructure from one place.
+function Dashboard() {
+  const [minutes, setMinutes] = useState(25);
+  const [customTime, setCustomTime] = useState(25);
+
+  const changeTimer = (time) => {
+    setMinutes(time);
+    setCustomTime(time);
+  };
+
+  return (
+    <div className="container py-5">
+
+      <div className="text-center mb-5">
+        <h1 className="fw-bold">Pomodoro Timer</h1>
+        <p className="text-muted">
+          Stay focused. Work smarter.
         </p>
       </div>
 
-      {/* Cards */}
+      <div className="row justify-content-center g-3 mb-5">
 
-      <div className="row">
-
-        <div className="col-lg-3 mb-3">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <h6>Running VMs</h6>
-              <h2>12</h2>
-            </div>
-          </div>
+        <div className="col-md-3">
+          <button
+            className="btn btn-primary w-100 py-3"
+            onClick={() => changeTimer(25)}
+          >
+            Focus Period
+            <br />
+            <strong>25 min</strong>
+          </button>
         </div>
 
-        <div className="col-lg-3 mb-3">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <h6>CPU Usage</h6>
-              <h2>68%</h2>
-            </div>
-          </div>
+        <div className="col-md-3">
+          <button
+            className="btn btn-success w-100 py-3"
+            onClick={() => changeTimer(5)}
+          >
+            Break
+            <br />
+            <strong>5 min</strong>
+          </button>
         </div>
 
-        <div className="col-lg-3 mb-3">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <h6>Storage</h6>
-              <h2>2.4 TB</h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-lg-3 mb-3">
-          <div className="card shadow-sm">
-            <div className="card-body">
-              <h6>Active Users</h6>
-              <h2>43</h2>
-            </div>
-          </div>
+        <div className="col-md-3">
+          <button
+            className="btn btn-warning w-100 py-3"
+            onClick={() => changeTimer(15)}
+          >
+            Long Break
+            <br />
+            <strong>15 min</strong>
+          </button>
         </div>
 
       </div>
 
-      {/* Recent Resources */}
+      <div className="timer-card text-center mx-auto">
 
-      <div className="card shadow-sm mt-4">
+        <h1 className="display-1 fw-bold">
+          {minutes}:00
+        </h1>
 
-        <div className="card-header">
-          Recent Resources
+        <div className="mt-4">
+
+          <button className="btn btn-primary me-2">
+            Start
+          </button>
+
+          <button className="btn btn-secondary me-2">
+            Pause
+          </button>
+
+          <button className="btn btn-danger">
+            Reset
+          </button>
+
         </div>
 
-        <div className="card-body">
+      </div>
 
-          <table className="table">
+      <div className="row justify-content-center mt-5">
 
-            <thead>
+        <div className="col-md-4">
 
-              <tr>
-                <th>Name</th>
-                <th>Status</th>
-                <th>Type</th>
-              </tr>
+          <div className="card shadow-sm">
 
-            </thead>
+            <div className="card-body">
 
-            <tbody>
+              <h5>Custom Time</h5>
 
-              <tr>
-                <td>VM-Production-01</td>
-                <td>
-                  <span className="badge bg-success">
-                    Running
-                  </span>
-                </td>
-                <td>Virtual Machine</td>
-              </tr>
+              <input
+                type="number"
+                className="form-control my-3"
+                value={customTime}
+                onChange={(e) => setCustomTime(e.target.value)}
+              />
 
-              <tr>
-                <td>Database Server</td>
-                <td>
-                  <span className="badge bg-success">
-                    Running
-                  </span>
-                </td>
-                <td>PostgreSQL</td>
-              </tr>
+              <button
+                className="btn btn-dark w-100"
+                onClick={() => setMinutes(customTime)}
+              >
+                Apply
+              </button>
 
-              <tr>
-                <td>Object Storage</td>
-                <td>
-                  <span className="badge bg-primary">
-                    Healthy
-                  </span>
-                </td>
-                <td>Storage</td>
-              </tr>
+            </div>
 
-              <tr>
-                <td>Kubernetes Cluster</td>
-                <td>
-                  <span className="badge bg-warning">
-                    Active
-                  </span>
-                </td>
-                <td>Container</td>
-              </tr>
-
-            </tbody>
-
-          </table>
+          </div>
 
         </div>
 
@@ -126,4 +117,5 @@ function Dashboard() {
     </div>
   );
 }
+
 export default Dashboard;
