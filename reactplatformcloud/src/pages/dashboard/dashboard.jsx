@@ -131,7 +131,7 @@ function Dashboard() {
             className="btn btn-secondary me-2"
             onClick={pauseTimer}
           >
-            Pause
+            Pause time
           </button>
 
           <button
