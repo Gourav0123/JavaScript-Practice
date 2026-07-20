@@ -1,16 +1,14 @@
-function Navbar() {
+function Navbar({ setSidebarOpen }) {
   return (
-    <nav className="navbar bg-white shadow-sm px-4">
+    <nav className="navbar bg-light px-3">
+      <h4>Cloud Dashboard</h4>
+      <button
+        className="btn btn-outline-dark"
+        onClick={() => setSidebarOpen(true)}
+      >
+        ☰
+      </button>
 
-      <h4 className="mb-0">
-        Dashboard
-      </h4>
-
-      <div>
-        <i className="bi bi-bell fs-5 me-3"></i>
-
-        <i className="bi bi-person-circle fs-4"></i>
-      </div>
 
     </nav>
   );

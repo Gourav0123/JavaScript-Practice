@@ -1,0 +1,19 @@
+.file-table-container{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.table-header{
+    border-bottom:1px solid #dee2e6;
+    padding-bottom:15px;
+}
+
+.table th{
+    background:#f8f9fa;
+}
+
+.table td{
+    vertical-align:middle;
+}

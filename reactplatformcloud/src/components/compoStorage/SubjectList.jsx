@@ -64,7 +64,7 @@ function SubjectList() {
     <div className="subject-card">
 
       <div className="subject-header">
-        <h5>📚 Subjects</h5>
+        <h5>Subjects</h5>
         <button className="btn btn-primary btn-sm">
           <i className="bi bi-plus-lg"></i>
         </button>
